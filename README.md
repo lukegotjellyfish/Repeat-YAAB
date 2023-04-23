@@ -1,5 +1,5 @@
 # Repeat YAAB
- AHK Script to run the Arma 3 Benchmark [YAAB](https://steamcommunity.com/sharedfiles/filedetails/?id=375092418) 20 times.
+ AHK Script to run the Arma 3 Benchmark [YAAB](https://steamcommunity.com/sharedfiles/filedetails/?id=375092418) 20 times and take a screenshot of each results page.
 
 ## Requirements
 - [AHK](https://www.autohotkey.com/)<br>
