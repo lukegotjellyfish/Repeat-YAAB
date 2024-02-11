@@ -25,20 +25,21 @@ if (A_IsAdmin = 0)
 	ExitApp
 }
 
-loop_number := 20
+loop_number := 999999
 
 dir = Screenshots
 if !FileExist(dir) {
 	FileCreateDir, %dir%
 }
 
-Home::
+*5::
 {
 	SoundBeep, 750, 500
+	CaptureScreen(0, False, "./Screenshots/" A_Index "-" A_Now "-STARTED.png")
 	Loop, %loop_number%
 	{
 		Sleep, 180000
-		CaptureScreen(1, 0, "./Screenshots/" A_Index "-" A_Now ".png")
+		CaptureScreen(0, False, "./Screenshots/" A_Index "-" A_Now ".png")
 		
 		if (A_INDEX != loop_number) {
 			Sleep, 1000
